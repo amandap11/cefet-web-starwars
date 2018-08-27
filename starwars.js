@@ -29,10 +29,11 @@ $.ajax({
 		$('li').click(function(e){
 
 			let url = e.target.getAttribute('data-episode-url');
+			let endUrl = url.slice(4);
+			let finalUrl = 'https' + endUrl;
 
-			console.log(url);
 			$.ajax({
-				url: url,
+				url: finalUrl,
 				method: 'GET',
 				success: function(filme){
 
