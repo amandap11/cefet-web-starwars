@@ -5,7 +5,7 @@
 //  - A introdução de cada filme, quando ele for clicado
 
 $.ajax({
-  url: 'http://swapi.co/api/films/',
+  url: 'https://swapi.co/api/films/',
   method: 'GET',      // opcional: 'GET' é o valor padrão
   success: function(resposta){
 
@@ -30,6 +30,7 @@ $.ajax({
 
 			let url = e.target.getAttribute('data-episode-url');
 
+			console.log(url);
 			$.ajax({
 				url: url,
 				method: 'GET',
