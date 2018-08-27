@@ -9,8 +9,6 @@ $.ajax({
   method: 'GET',      // opcional: 'GET' é o valor padrão
   success: function(resposta){
 
-		console.log(resposta);
-
 		filmes = resposta.results;
 
 		filmes.sort(function(movie1, movie2){
